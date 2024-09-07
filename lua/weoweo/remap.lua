@@ -23,9 +23,14 @@ vim.keymap.set('v', 'm', 'h')
 vim.keymap.set('v', 'n', 'j')
 vim.keymap.set('v', 'e', 'k')
 vim.keymap.set('v', 'i', 'l')
+vim.keymap.set('v', 'h', 'i')
+vim.keymap.set('v', 'H', 'I')
 
 vim.keymap.set('n', 'h', 'i')
 vim.keymap.set('n', 'H', 'I')
+
+---- Tab movement
+vim.keymap.set('n', '<leader><Tab>', 'gt')
 
 -- Need to fix insert and n (search next)
 -- vim.keymap.set("n", "n", "nzzzv", { desc = "Next in search"})
@@ -99,6 +104,8 @@ vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "I'M FREEEE!!!!"})
 -- Old man forgo' yer bindin's
 vim.keymap.set("n", "<leader>kb", ":sp ~/.config/nvim/lua/weoweo/remap.lua<CR>", { desc = "View list of keybindings"})
 
+-- View website
+vim.keymap.set("n", "<leader><F1>", ':tabnew | term browser-sync start --server --files "*.js, *.html, *.css"<CR>')
 
 
 -- Autocommands
