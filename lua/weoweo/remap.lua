@@ -13,6 +13,7 @@ vim.keymap.set('n', '<down>', '<cmd>echo "Use i to move!!"<CR>')
 -- Colemak Bindings
 --------------------------------------
 
+vim.keymap.set('n', '<leader>N', ':edit ')
 
 --- Movement
 vim.keymap.set('n', 'm', 'h')
@@ -28,6 +29,11 @@ vim.keymap.set('v', 'H', 'I')
 
 vim.keymap.set('n', 'h', 'i')
 vim.keymap.set('n', 'H', 'I')
+
+
+--- I HATE CHRONIC C-o
+--- Second greatest remap
+vim.keymap.set('i', '<C-n>', '<C-o>A')
 
 ---- Tab movement
 vim.keymap.set('n', '<leader><Tab>', 'gt')
