@@ -1,7 +1,13 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-
+-- Oil nvim
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+-- File tree like behavior for funzies but prob never used he he 
+vim.keymap.set("n", "<leader>ex", function()
+  vim.cmd("vsplit | wincmd l | vertical resize -30")
+  require("oil").open()
+end)
 
 -- Disable arrow keys in normal mode
 vim.keymap.set('n', '<left>', '<cmd>echo "Use m to move!!"<CR>')
@@ -41,8 +47,8 @@ vim.keymap.set('n', '<leader><Tab>', 'gt')
 -- Need to fix insert and n (search next)
 -- vim.keymap.set("n", "n", "nzzzv", { desc = "Next in search"})
 -- vim.keymap.set("n", "N", "Nzzzv", { desc = "prev in search"})
-vim.keymap.set("n", "<A-n>", "nzzzv", { desc = "Next in search"})
-vim.keymap.set("n", "<A-N>", "Nzzzv", { desc = "prev in search"})
+vim.keymap.set("n", "<A-l>", "nzzzv", { desc = "Next in search"})
+vim.keymap.set("n", "<A-L>", "Nzzzv", { desc = "prev in search"})
 
 -- Fixing e (end of word)
 
@@ -51,7 +57,6 @@ vim.keymap.set("n", "<A-N>", "Nzzzv", { desc = "prev in search"})
 vim.keymap.set("v", "N", ":m '>+1<CR>gv=gv", { desc = "Move whole line down"})
 vim.keymap.set("v", "E", ":m '<-2<CR>gv=gv", { desc = "Move whole line up"})
 
-vim.keymap.set("n", "<leader>ex", vim.cmd.Ex, { desc = "Go back to NetRW"})
 
 --Ez movement between neovim panes
 vim.keymap.set("n", "<S-m>", "<C-w><C-h>", {desc = 'Move focus to the left window'})

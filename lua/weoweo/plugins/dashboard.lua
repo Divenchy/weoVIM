@@ -162,7 +162,7 @@ VMMMPVMMP" dMMMMMP  VMMMP"    VP"  dMP dMP dMP dMP
           { action = "Telescope live_grep",                                      desc = " Find Text",       icon = " ", key = "g" },
           { action = "Lazy",                                                     desc = " Lazy",            icon = "󰒲 ", key = "l" },
           { action = "qa",                                                       desc = " Quit",            icon = " ", key = "q" },
-          { action = "Ex",                                                       desc = " NETRW",           icon = " ",  key = "f" },
+          { action = "Oil",                                                       desc = " OIL",           icon = " ",  key = "f" },
         },
         footer = function()
           local stats = require("lazy").stats()
