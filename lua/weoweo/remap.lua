@@ -32,6 +32,7 @@ vim.keymap.set('v', 'e', 'k')
 vim.keymap.set('v', 'i', 'l')
 vim.keymap.set('v', 'h', 'i')
 vim.keymap.set('v', 'H', 'I')
+vim.keymap.set('n', 'ch', 'ci')
 
 vim.keymap.set('n', 'h', 'i')
 vim.keymap.set('n', 'H', 'I')
