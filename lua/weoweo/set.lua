@@ -21,7 +21,6 @@ vim.opt.wrap = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = "~/.config/nvim/undo/"
 vim.opt.undofile = true
 
 vim.opt.hlsearch = true
