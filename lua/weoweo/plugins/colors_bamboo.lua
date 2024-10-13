@@ -6,6 +6,5 @@ return {
     require('bamboo').setup {
       -- optional configuration here
     }
-    require('bamboo').load()
   end,
 }
