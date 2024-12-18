@@ -16,7 +16,6 @@ return {
                 palette.bg5 = "#e3d4ac"
             end
         })
-
         forest.load()
     end,
 }

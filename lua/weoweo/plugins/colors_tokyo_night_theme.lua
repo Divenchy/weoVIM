@@ -23,6 +23,6 @@ return {
         floats = "dark", -- style for floating windows
       },
     })
-    vim.cmd[[colorscheme tokyonight]]
+    -- vim.cmd[[colorscheme tokyonight]]
   end
 }
