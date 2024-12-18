@@ -1,5 +1,6 @@
 return {
   "folke/snacks.nvim",
+  dependencies = { 'echasnovski/mini.nvim' },
   priority = 1000,
   lazy = false,
   ---@type snacks.Config
