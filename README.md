@@ -1,3 +1,3 @@
-#WEOVIM
+# WEOVIM
 
 Personal setup for neovim configuration.
