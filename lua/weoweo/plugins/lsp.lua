@@ -90,7 +90,7 @@ return {
                 vim.keymap.set("n", "<leader>nd", function() vim.diagnostic.goto_next() end, {buffer = bufnr, remap = false, desc = 'Go to [N]ext diagnostic'})
                 vim.keymap.set("n", "<leader>e", function() vim.diagnostic.open_float() end, {buffer = bufnr, remap = false, desc = 'Show diagnostic [E]rror messages'})
                 vim.keymap.set("n", "<leader>el", function() vim.diagnostic.setloclist() end, {buffer = bufnr, remap = false, desc = 'Open diagnostic [Q]uickfix [l]ist'})
-                vim.keymap.set("n", "k", function() vim.lsp.buf.hover() end, {buffer = bufnr, remap = false, desc = '[K] for hover'})
+                vim.keymap.set("n", "<leader>k", function() vim.lsp.buf.hover() end, {buffer = bufnr, remap = false, desc = '[K] for hover'})
                 vim.keymap.set("n", "<leader>lws", function() vim.lsp.buf.workspace_symbol() end, {buffer = bufnr, remap = false})
                 vim.keymap.set("n", "<leader>lca", function() vim.lsp.buf.code_action() end, {buffer = bufnr, remap = false, desc = 'Code_action (LSP)'})
                 vim.keymap.set("n", "<leader>lrr", function() vim.lsp.buf.references() end, {buffer = bufnr, remap = false, desc = 'references (LSP)'})

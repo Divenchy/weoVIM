@@ -10,28 +10,6 @@ vim.keymap.set('n', '<right>', '<cmd>echo "Use n to move!!"<CR>')
 vim.keymap.set('n', '<up>', '<cmd>echo "Use e to move!!"<CR>')
 vim.keymap.set('n', '<down>', '<cmd>echo "Use i to move!!"<CR>')
 
---------------------------------------------------------------------
--- Colemak Bindings
---------------------------------------
-
-
---- Movement
-vim.keymap.set('n', 'm', 'h')
-vim.keymap.set('n', 'n', 'j')
-vim.keymap.set('n', 'e', 'k')
-vim.keymap.set('n', 'i', 'l')
-vim.keymap.set('v', 'm', 'h')
-vim.keymap.set('v', 'n', 'j')
-vim.keymap.set('v', 'e', 'k')
-vim.keymap.set('v', 'i', 'l')
-vim.keymap.set('v', 'h', 'i')
-vim.keymap.set('v', 'H', 'I')
-vim.keymap.set('n', 'ch', 'ci')
-
-vim.keymap.set('n', 'h', 'i')
-vim.keymap.set('n', 'H', 'I')
-
-
 --- I HATE CHRONIC C-o
 --- Second greatest remap
 vim.keymap.set('i', '<C-n>', '<C-o>A', { desc = "Move to end"})
@@ -40,18 +18,18 @@ vim.keymap.set('i', '<C-n>', '<C-o>A', { desc = "Move to end"})
 vim.keymap.set('n', '<leader><Tab>', 'gt', { desc = "Move to next tab"})
 
 ---- Search word
-vim.keymap.set("n", "<A-l>", "nzzzv", { desc = "Next in search"})
-vim.keymap.set("n", "<A-L>", "Nzzzv", { desc = "prev in search"})
+vim.keymap.set("n", "<A-n>", "nzzzv", { desc = "Next in search"})
+vim.keymap.set("n", "<A-N>", "Nzzzv", { desc = "prev in search"})
 
 ---- Move lines
-vim.keymap.set("v", "N", ":m '>+1<CR>gv=gv", { desc = "Move whole line down"})
-vim.keymap.set("v", "E", ":m '<-2<CR>gv=gv", { desc = "Move whole line up"})
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move whole line down"})
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move whole line up"})
 
 -- Ez movement between neovim panes
-vim.keymap.set("n", "<S-m>", "<C-w><C-h>", {desc = 'Move focus to the left window'})
-vim.keymap.set("n", "<S-i>", "<C-w><C-l>", {desc = 'Move focus to the right window'})
-vim.keymap.set("n", "<S-n>", "<C-w><C-j>", {desc = 'Move focus to the lower window'})
-vim.keymap.set("n", "<S-e>", "<C-w><C-k>", {desc = 'Move focus to the upper window'})
+vim.keymap.set("n", "<S-h>", "<C-w><C-h>", {desc = 'Move focus to the left window'})
+vim.keymap.set("n", "<S-l>", "<C-w><C-l>", {desc = 'Move focus to the right window'})
+vim.keymap.set("n", "<S-j>", "<C-w><C-j>", {desc = 'Move focus to the lower window'})
+vim.keymap.set("n", "<S-k>", "<C-w><C-k>", {desc = 'Move focus to the upper window'})
 
 -- Half page movement
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Half page down"})
