@@ -24,3 +24,13 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
   pattern = "*.*",
   command = "silent! loadview"
 })
+
+-- Presenting Markdown Files
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown",
+    callback = function()
+        vim.keymap.set("n", "<leader>p", function()
+            require('present').start_presentation()
+        end)
+    end,
+})
